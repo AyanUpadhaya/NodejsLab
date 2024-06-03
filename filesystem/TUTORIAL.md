@@ -2,7 +2,7 @@
 
 **1. Read File accepts callback and encoding**
 
-~~~
+~~~ js
 const fs = require("fs");
 const readMyFile = (err, data) => {
   if (err) {
@@ -19,7 +19,7 @@ fs.readFile(filepath, "utf-8", readMyFile);
 
 **2. Open files**
 
-~~~
+~~~ js
 const fs = require("fs");
 /** The fs.open() method takes a "flag" as the second argument, 
 if the flag is "w" for "writing", the specified file is opened for writing. 
@@ -33,7 +33,7 @@ fs.open(fileName,'w',(err,file)=>{
 
 **3. Write Files**
 
-~~~
+~~~ js
 const fs = require("fs");
 /** The fs.writeFile() method replaces the specified file and content if it exists, 
 If the file does not exist, a new file, containing the specified content, will be created:
@@ -46,7 +46,7 @@ fs.writeFile('myfile2.txt','hello world',(err)=>{
 ~~~
 **4. Update or append files**
 
-~~~
+~~~ js
 const fs = require("fs");
 /** The fs.appendFile() method appends specified content to a file., 
 If the file does not exist, the file will be created:
@@ -59,7 +59,7 @@ fs.appendFile(fileName, "Hello Node js", (err) => {
 ~~~
 **5. Delete files**
 
-~~~
+~~~ js
 const fs = require("fs");
 /** To delete a file with the File System module,  use the fs.unlink() method
  **/

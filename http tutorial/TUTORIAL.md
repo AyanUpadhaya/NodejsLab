@@ -10,7 +10,7 @@
 
 **utils/serveHtml.js**
 
-~~~
+~~~ js
 const fs = require('fs');
 const path = require('path');
 
@@ -36,7 +36,7 @@ module.exports = serveHtml;
 **Serve HTML**
 **controllers/homeController.js**
 
-~~~
+~~~ js
 const path = require('path');
 const serveHtml = require('../utils/serveHtml');
 
@@ -51,7 +51,7 @@ module.exports = homeController;
 **Render Ejs template**
 **controllers/homeController.js**
 
-~~~
+~~~ js
 const renderTemplate = require('../utils/renderTemplate');
 
 const homeController = (req, res) => {
@@ -65,7 +65,7 @@ module.exports = homeController;
 **Ejs template**
 **views/index.ejs**
 
-~~~
+~~~ html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,7 +84,7 @@ module.exports = homeController;
 
 **utils/renderTemplate.js**
 
-~~~
+~~~ js
 const ejs = require('ejs');
 const path = require('path');
 
@@ -112,7 +112,7 @@ module.exports = renderTemplate;
 
 
 **routes.js**
-~~~
+~~~ js
 const homeController = require('./controllers/homeController');
 const aboutController = require('./controllers/aboutController');
 const errorController = require('./controllers/errorController');
@@ -139,7 +139,7 @@ module.exports = routes;
 
 
 **server.js**
-~~~
+~~~ js
 const http = require("http");
 const routes = require("./routes");
 const HOST = "localhost";
